@@ -48,7 +48,7 @@ const TARGET_USERS: TargetUserItem[] = [
 export function QuoteFlowApp(): React.JSX.Element {
   const [activeDeckIndex, setActiveDeckIndex] = useState<number>(0);
   
-  const [selectedServicePrice] = useState<number>(5000);
+  
 
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
