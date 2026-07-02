@@ -1,0 +1,53 @@
+/* Modern Reset & Fluid Typography Configuration */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #030305;
+  color: #ffffff;
+  scroll-behavior: smooth;
+  
+  /* Premium text rendering adjustments */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  
+  overflow-x: hidden;
+}
+
+/* Eliminate tap delays on modern touch devices */
+a, button {
+  touch-action: manipulation;
+}
+
+/* Premium Custom Scrollbar System */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030305;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  border: 2px solid #030305;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(192, 132, 252, 0.3); /* Subtle Electric Purple on hover */
+}
+
+/* Elegant Selection Highlight */
+::selection {
+  background-color: rgba(168, 85, 247, 0.25); /* Purple tint */
+  color: #ffffff;
+}
